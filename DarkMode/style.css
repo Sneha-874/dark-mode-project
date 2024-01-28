@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+    --color-primary: hsl(218, 49%, 43%);
+    --color-primary-light: hsl(218, 49%, 50%);
+    --color-body: hsl(218, 49%, 95%);
+    --color-text: hsl(218, 20%, 20%);
+}
+
+.dark-mode {
+    --color-body: hsl(218, 49%, 10%);
+    --color-text: hsl(218, 49%, 90%);
+    --color-primary: hsl(218, 49%, 48%);
+    --color-primary-light: hsl(218, 49%, 55%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-body);
+}
+
+h1 {
+    color: var(--color-primary);
+    text-align: center; /* Center text horizontally */
+}
+
+.toggle-theme {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    padding: 1rem 1.5rem;
+    background: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s background; /* Corrected property name */
+}
+
+.toggle-theme:hover {
+    background-color: var(--color-primary-light);
+}
+
+p {
+    color: var(--color-text);
+    text-align: center; /* Center text horizontally */
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px; /* Adjust as needed */
+}
